@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Ticket Booking</title>
+    <link rel="stylesheet" href="Book_Ticket.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header class="main-header">
+            <span class="icon">&larr;</span>
+            <span>Book Ticket</span>
+
+        </header>
+
+        <main class="booking-content">
+            
+            <div class="progress-tracker">
+                <div class="step active">
+                    <div class="circle">&#10003;</div>
+                    <span>Book</span>
+                </div>
+                <div class="step">
+                    <div class="circle">&#10003;</div>
+                    <span>Pay</span>
+                </div>
+                <div class="step">
+                    <div class="circle">&#10003;</div>
+                    <span>Ride</span>
+                </div>
+            </div>
+
+            <div class="journey-tabs">
+                <div class="tab active" data-tab="single">
+                   <span class="icon">&uarr;</span> Single Journey
+                </div>
+                <div class="tab" data-tab="group">
+                    <span class="icon">👥</span> Group Journey
+<!-- 
+                    <span class="icon">&#1984135;</span> Group Journey -->
+                </div>
+            </div>
+
+            <form>
+<div class="form-group">
+  <label for="station-from">Station From</label>
+  <select id="station-from" name="station-To">
+    <option value="">Please select station From</option>
+
+    <!-- APMC to Motera Stadium -->
+      <option value="apmc">APMC</option>
+      <option value="jivraj_park">Jivraj Park</option>
+      <option value="rajiv_nagar">Rajiv Nagar</option>
+      <option value="shreyas">Shreyas</option>
+      <option value="paldi">Paldi</option>
+      <option value="gandhigram">Gandhigram</option>
+      <option value="old_high_court">Old High Court</option>
+      <option value="usmanpura">Usmanpura</option>
+      <option value="vijay_nagar">Vijay Nagar</option>
+      <option value="vadaj">Vadaj</option>
+      <option value="ranip">Ranip</option>
+      <option value="sabarmati_railway">Sabarmati Railway Station</option>
+      <option value="aec">AEC</option>
+      <option value="sabarmati">Sabarmati</option>
+      <option value="motera_stadium">Motera Stadium</option>
+    </optgroup>
+
+    <!-- Vastral Gam to Thaltej Gam -->
+      <option value="vastral_gam">Vastral Gam</option>
+      <option value="nirant_cross_road">Nirant Cross Road</option>
+      <option value="vastral">Vastral</option>
+      <option value="rabari_colony">Rabari Colony</option>
+      <option value="amraiwadi">Amraiwadi</option>
+      <option value="apparel_park">Apparel Park</option>
+      <option value="kankaria_east">Kankaria East</option>
+      <option value="kalupur">Kalupur Railway Station</option>
+      <option value="gheekanta">Gheekanta</option>
+      <option value="shahpur">Shahpur</option>
+      <option value="old_high_court">Old High Court</option>
+      <option value="sp_stadium">SP Stadium</option>
+      <option value="commerce_six_road">Commerce Six Road</option>
+      <option value="gujarat_university">Gujarat University</option>
+      <option value="gurukul_road">Gurukul Road</option>
+      <option value="doordarshan_kendra">Doordarshan Kendra</option>
+      <option value="thaltej">Thaltej</option>
+      <option value="thaltej_gam">Thaltej Gam</option>
+    </optgroup>
+
+    <!-- (Motera to Sector-1) -->
+      <option value="motera_stadium">Motera Stadium</option>
+      <option value="gnlu">GNLU</option>
+      <option value="raysan">Raysan</option>
+      <option value="randesan">Randesan</option>
+      <option value="dholakuva_circle">Dholakuva Circle</option>
+      <option value="infocity">Infocity</option>
+      <option value="sector_1">Sector-1</option>
+    </optgroup>
+
+    <!-- (Motera to GIFT City) -->
+      <option value="gnlu">GNLU</option>
+      <option value="gift_city">GIFT City</option>
+    </optgroup>
+  </select>
+</div>
+ 
+                <div class="form-group">
+  <label for="station-from">Station To</label>
+  <select id="station-from" name="station-from">
+    <option value="">Please select station To</option>
+
+    <!-- APMC to Motera Stadium -->
+      <option value="apmc">APMC</option>
+      <option value="jivraj_park">Jivraj Park</option>
+      <option value="rajiv_nagar">Rajiv Nagar</option>
+      <option value="shreyas">Shreyas</option>
+      <option value="paldi">Paldi</option>
+      <option value="gandhigram">Gandhigram</option>
+      <option value="old_high_court">Old High Court</option>
+      <option value="usmanpura">Usmanpura</option>
+      <option value="vijay_nagar">Vijay Nagar</option>
+      <option value="vadaj">Vadaj</option>
+      <option value="ranip">Ranip</option>
+      <option value="sabarmati_railway">Sabarmati Railway Station</option>
+      <option value="aec">AEC</option>
+      <option value="sabarmati">Sabarmati</option>
+      <option value="motera_stadium">Motera Stadium</option>
+    </optgroup>
+
+    <!-- Vastral Gam to Thaltej Gam -->
+      <option value="vastral_gam">Vastral Gam</option>
+      <option value="nirant_cross_road">Nirant Cross Road</option>
+      <option value="vastral">Vastral</option>
+      <option value="rabari_colony">Rabari Colony</option>
+      <option value="amraiwadi">Amraiwadi</option>
+      <option value="apparel_park">Apparel Park</option>
+      <option value="kankaria_east">Kankaria East</option>
+      <option value="kalupur">Kalupur Railway Station</option>
+      <option value="gheekanta">Gheekanta</option>
+      <option value="shahpur">Shahpur</option>
+      <option value="old_high_court">Old High Court</option>
+      <option value="sp_stadium">SP Stadium</option>
+      <option value="commerce_six_road">Commerce Six Road</option>
+      <option value="gujarat_university">Gujarat University</option>
+      <option value="gurukul_road">Gurukul Road</option>
+      <option value="doordarshan_kendra">Doordarshan Kendra</option>
+      <option value="thaltej">Thaltej</option>
+      <option value="thaltej_gam">Thaltej Gam</option>
+    </optgroup>
+
+    <!-- (Motera to Sector-1) -->
+      <option value="motera_stadium">Motera Stadium</option>
+      <option value="gnlu">GNLU</option>
+      <option value="raysan">Raysan</option>
+      <option value="randesan">Randesan</option>
+      <option value="dholakuva_circle">Dholakuva Circle</option>
+      <option value="infocity">Infocity</option>
+      <option value="sector_1">Sector-1</option>
+    </optgroup>
+
+    <!-- (Motera to GIFT City) -->
+      <option value="gnlu">GNLU</option>
+      <option value="gift_city">GIFT City</option>
+    </optgroup>
+  </select>
+</div>
+
+                <div class="passenger-counter">
+                    <label>No. of Passengers</label>
+                    <div class="counter-controls">
+                        <button type="button" class="counter-btn" id="decrease-btn">-</button>
+                        <span class="passenger-count" id="passenger-count">1</span>
+                        <button type="button" class="counter-btn" id="increase-btn">+</button>
+                    </div>
+                </div>
+
+                <p class="timetable-notice">
+                    Before booking your ticket, kindly refer to the timetable
+                </p>
+            </form>
+        </main>
+<!-- payment -->
+        <button class="confirm-btn" onclick="location.href='pay.html'">Confirm Ticket</button>
+    </div>
+
+    <script src="Book_Ticket.js"></script>
+
+</body>
+</html>
